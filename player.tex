@@ -1,23 +1,54 @@
-\renewcommand\charname{Name}
-\renewcommand\charlevel{Level 0 Nothing}
+\renewcommand\charname{Silif}
+\renewcommand\charlevel{Level 1 Sorcerer}
 \renewcommand\charalignment{TN}
-\renewcommand\charplayername{Nemo}
+\renewcommand\charplayername{Mart\'in}
+\renewcommand\charrace{Half-Elf}
+\renewcommand\charsize{Medium}
+\renewcommand\chargender{m}
+\renewcommand\charlanguagesspoken{Common, Elve, Undercommon, Aklo}
 
-\addtocounter{charhpcount}{6}
+\addtocounter{charhpcount}{8}
 \charstr{12}
-\chardex{12}
-\charcon{12}
-\charint{12}
-\charwis{12}
-\charcha{12}
+\chardex{15}
+\charcon{14}
+\charint{15}
+\charwis{13}
+\charcha{20}
 
-\isclassskill{characrobaticsclassskillcount}
+% \isclassskill{characrobaticsclassskillcount}
+\isclassskill{charappraiseclassskillcount}
+\isclassskill{charbluffclassskillcount}
+\isclassskill{charcraftoneclassskillcount}
+\isclassskill{charflyclassskillcount}
+\isclassskill{charintimidateclassskillcount}
+\isclassskill{charknowledgearcanaclassskillcount}
+\isclassskill{charprofessiononeclassskillcount}
+\isclassskill{charspellcraftclassskillcount}
+\isclassskill{charusemagicdeviceclassskillcount}
+\isclassskill{charperceptionclassskillcount}
 
 % Class skill
-\addtocounter{characrobaticsmiscmodcount}{3}
+% \addtocounter{charappraisemiscmodcount}{3}
+% \addtocounter{charbluffmiscmodcount}{3}
+% \addtocounter{charcraftonemiscmodcount}{3}
+% \addtocounter{charflymiscmodcount}{3}
+\addtocounter{charintimidatemiscmodcount}{3}
+% \addtocounter{charknowledgearcanamiscmodcount}{3}
+% \addtocounter{charprofessiononemiscmodcount}{3}
+\addtocounter{charspellcraftmiscmodcount}{3}
+\addtocounter{charusemagicdevicemiscmodcount}{3}
+%%%%%%%%%%%%%Perception
+\addtocounter{charperceptionmiscmodcount}{3} 
+% Racial Feat
+\addtocounter{charperceptionmiscmodcount}{2}
+% Skill Focus
+\addtocounter{charperceptionmiscmodcount}{3}
 
 % ranks
-\addtocounter{characrobaticsrankscount}{1}
+\addtocounter{charintimidaterankscount}{1}
+\addtocounter{charspellcraftrankscount}{1}
+\addtocounter{charusemagicdevicerankscount}{1}
+\addtocounter{charperceptionrankscount}{1}
 
 % items
 %% This is not the ideal way, but I can't figure how to do it right atm.
@@ -37,7 +68,9 @@
 
 \renewcommand\charspelldump{This is a very non-ideal solution to the spell problem. This is just a parbox for the user to put whatever they feel best keeps track of their spells. Future versions of this character sheet will include proper spell management}
 
-%%% Local Variables: 
-%%% mode: latex
-%%% TeX-master: t
-%%% End: 
+%% Feats
+% Improve Initiave
+\setcounter{charinitmiscmodcount}{4}
+% Eyes and Ears of the City
+\addtocounter{charperceptionmiscmodcount}{1}
+

@@ -166,6 +166,8 @@
 \newcounter{charwistmpmodcount}
 \newcounter{charchatmpmodcount}
 
+\newcounter{charinitmiscmodcount}
+
 
 \newcommand\charstr[1]{
   \setcounter{charstrcount}{0}
