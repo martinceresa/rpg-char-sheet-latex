@@ -769,13 +769,20 @@
 \newcounter{charplatinumcount} %% I hope that's the right counter!
 
 %%%%% Spell Thingis
+\newcommand\singlespell[3]{%
+    \textbf{#1}(#3) & #2 \\
+}
 \newcommand\spelllist{%
     \textbf{Jolt} & Desc: Holissssssss \\
     \textbf{Bless} & Desc: Holissssssss \\
 }
 \newcommand\spelltable{%
     \begin{tabular}[t]{|c|r|}
+        \hline
+        \textbf{Spell List BIACH} & Description \\
+        \hline
         \spelllist
+        \hline
     \end{tabular}
 }
 
