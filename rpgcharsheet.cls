@@ -769,15 +769,23 @@
 \newcounter{charplatinumcount} %% I hope that's the right counter!
 
 %%%%% Spell Thingis
-\newcommand\singlespell[3]{%
-    \textbf{#1}(#3) & #2 \\
+\newcounter{spells1}
+\setcounter{spells1}{0}
+\newcommand\singlespell[2]{%
+    \textbf{#1} & #2 \\
+}
+\newcommand\complexspell[3]{%
+    \textbf{#1}(M:#3) & #2 \\
+}
+\newcommand\bloodlinespell[2]{%
+    \textbf{\color{blue}#1} & #2 \\
 }
 \newcommand\spelllist{%
     \textbf{Jolt} & Desc: Holissssssss \\
     \textbf{Bless} & Desc: Holissssssss \\
 }
 \newcommand\spelltable{%
-    \begin{tabular}[t]{|c|r|}
+    \begin{tabular}[t]{B{60}B{145}}
         \hline
         \textbf{Spell List BIACH} & Description \\
         \hline
