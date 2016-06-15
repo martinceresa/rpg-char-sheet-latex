@@ -767,3 +767,15 @@
 \newcounter{charsilvercount}
 \newcounter{chargoldcount}
 \newcounter{charplatinumcount} %% I hope that's the right counter!
+
+%%%%% Spell Thingis
+\newcommand\spelllist{%
+    \textbf{Jolt} & Desc: Holissssssss \\
+    \textbf{Bless} & Desc: Holissssssss \\
+}
+\newcommand\spelltable{%
+    \begin{tabular}[t]{|c|r|}
+        \spelllist
+    \end{tabular}
+}
+
