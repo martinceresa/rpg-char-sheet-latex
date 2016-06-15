@@ -698,6 +698,13 @@
       \itshape #6 &  $#7$ & \itshape #8 & \multicolumn{2}{A{76}}{$#9$} & \tabularnewline\bottomrule
     \end{tabular}}
 }
+\newcommand\spell[4]{%
+    \put(#1,#2){%
+        \textbf{#3}
+        %Description
+        \emph{#4}
+    }
+}
 
 %% Skill commands
 \newcounter{tmpskilltotalcount}
