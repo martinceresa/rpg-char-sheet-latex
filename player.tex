@@ -5,15 +5,15 @@
 \renewcommand\charrace{Half-Elf}
 \renewcommand\charsize{Medium}
 \renewcommand\chargender{m}
-\renewcommand\charlanguagesspoken{Common, Elve, Undercommon, Aklo}
+\renewcommand\charlanguagesspoken{Common, Undercommon, Aklo}
 
-\addtocounter{charhpcount}{8}
+\setcounter{charhpcount}{8} % Basic HP
 \charstr{12}
 \chardex{15}
 \charcon{14}
 \charint{15}
 \charwis{13}
-\charcha{20}
+\charcha{18}
 
 % \isclassskill{characrobaticsclassskillcount}
 \isclassskill{charappraiseclassskillcount}
@@ -25,27 +25,20 @@
 \isclassskill{charprofessiononeclassskillcount}
 \isclassskill{charspellcraftclassskillcount}
 \isclassskill{charusemagicdeviceclassskillcount}
-\isclassskill{charperceptionclassskillcount}
 
 % Class skill
 % \addtocounter{charappraisemiscmodcount}{3}
-% \addtocounter{charbluffmiscmodcount}{3}
+\addtocounter{charbluffmiscmodcount}{3}
 % \addtocounter{charcraftonemiscmodcount}{3}
 % \addtocounter{charflymiscmodcount}{3}
-\addtocounter{charintimidatemiscmodcount}{3}
+% \addtocounter{charintimidatemiscmodcount}{3}
 % \addtocounter{charknowledgearcanamiscmodcount}{3}
 % \addtocounter{charprofessiononemiscmodcount}{3}
 \addtocounter{charspellcraftmiscmodcount}{3}
 \addtocounter{charusemagicdevicemiscmodcount}{3}
-%%%%%%%%%%%%%Perception
-\addtocounter{charperceptionmiscmodcount}{3} 
-% Racial Feat
-\addtocounter{charperceptionmiscmodcount}{2}
-% Skill Focus
-\addtocounter{charperceptionmiscmodcount}{3}
 
 % ranks
-\addtocounter{charintimidaterankscount}{1}
+\addtocounter{charbluffrankscount}{1}
 \addtocounter{charspellcraftrankscount}{1}
 \addtocounter{charusemagicdevicerankscount}{1}
 \addtocounter{charperceptionrankscount}{1}
@@ -68,5 +61,3 @@
 
 \renewcommand\charspelldump{This is a very non-ideal solution to the spell problem. This is just a parbox for the user to put whatever they feel best keeps track of their spells. Future versions of this character sheet will include proper spell management}
 
-\input{spells}
-\input{featstraits}

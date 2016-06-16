@@ -175,11 +175,19 @@
   \setcounter{charstrmodcount}{0}
   \setcounter{charstrmodcount}{(\value{charstrcount}-10)/\real{2}}
 }
+\newcommand\charstradd[1]{%
+    \addtocounter{charstrcount}{#1}
+    \setcounter{charstrmodcount}{(\value{charstrcount}-10)/\real{2}}
+}
 \newcommand\chardex[1]{
   \setcounter{chardexcount}{0}
   \setcounter{chardexcount}{#1}
   \setcounter{chardexmodcount}{0}
   \setcounter{chardexmodcount}{(\value{chardexcount}-10)/\real{2}}
+}
+\newcommand\chardexadd[1]{%
+    \addtocounter{chardexcount}{#1}
+    \setcounter{chardexmodcount}{(\value{chardexcount}-10)/\real{2}}
 }
 \newcommand\charcon[1]{
   \setcounter{charconcount}{0}
@@ -203,6 +211,10 @@
   \setcounter{charchacount}{0}
   \setcounter{charchacount}{#1}
   \setcounter{charchamodcount}{0}
+  \setcounter{charchamodcount}{(\value{charchacount}-10)/\real{2}}
+}
+\newcommand\charchaadd[1]{%
+    \addtocounter{charchacount}{#1}
   \setcounter{charchamodcount}{(\value{charchacount}-10)/\real{2}}
 }
 
