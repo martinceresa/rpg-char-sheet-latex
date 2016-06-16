@@ -780,7 +780,11 @@
 \newcommand\bloodlinespell[2]{%
     \textbf{\color{blue}#1} & #2 \\
 }
-\newcommand\spelllist{%
+\newcommand\cantrips{%
+    \textbf{Jolt} & Desc: Holissssssss \\
+    \textbf{Bless} & Desc: Holissssssss \\
+}
+\newcommand\firstspelllist{%
     \textbf{Jolt} & Desc: Holissssssss \\
     \textbf{Bless} & Desc: Holissssssss \\
 }
@@ -789,8 +793,16 @@
         \hline
         \textbf{Spell List BIACH} & Description \\
         \hline
-        \spelllist
+        Cantrips & \\
         \hline
+        \cantrips
+        \hline
+        \ifthenelse{\value{spells1}=0}{%
+            LEVELEA & PUTO}{%
+        First Level Spells & \arabic{spells1} \\
+        \hline
+        \firstspelllist
+        \hline
+        }
     \end{tabular}
 }
-

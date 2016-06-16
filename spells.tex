@@ -3,15 +3,12 @@
 % Charisma bonus
 \addtocounter{spells1}{2}
 %% Spell list and things?
-\renewcommand\spelllist{%
-    Cantrips & \\
-    \hline
+\renewcommand\cantrips{%
     \singlespell{Light}{Object shines like a torch.}
     \singlespell{Read Magic}{Sarasa }
-    \hline
-    First Level Spells & \arabic{spells1} \\
-    \hline
+}
+\renewcommand\firstspelllist{%
+    \bloodlinespell{Spychic Strike}{Sarasa}
     \singlespell{Grease}{Sarasa}
     \singlespell{Burning Hands}{Sarasa}
-    \bloodlinespell{Spychic Strike}{Sarasa}
 }
