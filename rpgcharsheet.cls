@@ -150,6 +150,7 @@
 \newcounter{charstrmodcount}
 \newcounter{chardexmodcount}
 \newcounter{charconmodcount}
+\newcounter{charfortitudemiscmodcount}
 \newcounter{charintmodcount}
 \newcounter{charwismodcount}
 \newcounter{charchamodcount}
@@ -225,6 +226,8 @@
 
 %% Health counter
 \newcounter{charhpcount}
+%% Exp counter
+\newcounter{charexpcount}
 
 %% Skill set counters
 \newcounter{characrobaticscount}

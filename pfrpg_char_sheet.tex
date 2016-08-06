@@ -2,10 +2,12 @@
 
 \begin{document}
 %%% Configs
+
 \input{player}
 \input{racial}
 \input{spells}
 \input{featstraits}
+
 %%% 
 
 \unitlength\textwidth
@@ -58,19 +60,18 @@
 
   %% HP
   \singletitlebox{107}{505}{26}{12}{HP}
-  % \put(107,505){\framebox(26,12){}}
-  % \put(107,508){\makebox(26,9){HP}}
-  % \put(107,506){\makebox(26,3){\tiny\scshape hit points}}
   \put(137,505){\framebox(38,12){}}
   \put(137,512){\makebox(14,4){\tiny\scshape Total}}
   \put(137,505){\parbox[b][12\unitlength][c]{36\unitlength}{\raggedleft \arabic{charhpcount}}}
   \put(177,505){\framebox(28,12){}}
-  \put(177,512){\makebox(8,4){\tiny\scshape DR}}
+  \put(177,512){\makebox(8,4){\tiny\scshape Exp}}
+  \put(167,505){\parbox[b][12\unitlength][c]{36\unitlength}{\raggedleft
+          \arabic{charexpcount}}}
 
   %% little boxes
   \put(107,500){\makebox(36,4){\tiny\scshape wounds/current hp}}
   \put(107,480){\framebox(98,20){}}
-  \put(109,480){\parbox[b][18\unitlength][t]{82\unitlength}{\tiny blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah }}
+  \put(109,480){\parbox[b][18\unitlength][t]{82\unitlength}{\tiny }}
   \put(107,475){\makebox(36,4){\tiny\scshape nonleathal damage}}
   \put(107,455){\framebox(98,20){}}
   
@@ -99,7 +100,7 @@
   %% fort, reflex and will
   \stretchlabels{60}{392}{205}{TOTAL, base save, ability modifier, magic modifier, misc modifier, temporary modifier}
   \titlebox{0}{380}{53}{fortitude}{(constitution)}
-  \stretchequalattributes{60}{380}{205}{0,\arabic{charconmodcount},0,0,0}
+  \stretchequalattributes{60}{380}{205}{0,\arabic{charconmodcount},0,\arabic{charfortitudemiscmodcount},0}
   \titlebox{0}{365}{53}{reflex}{(dexterity)}
   \stretchequalattributes{60}{365}{205}{0,\arabic{chardexmodcount},0,0,0}
   \titlebox{0}{350}{53}{will}{(wisdom)}  
@@ -113,16 +114,16 @@
   
 
   \singletitlebox{0}{309}{21}{11}{cmb}
-  \stretchequalattributes{25}{310}{130}{0,\arabic{charstrmodcount},-1}
+  \stretchequalattributes{25}{310}{130}{0,\arabic{charstrmodcount},0}
   \stretchlabels{25}{304}{130}{TOTAL, \mbox{base attack} bonus,strength modifier, size modifier}
   \singletitlebox{0}{289}{21}{11}{cmd}
-  \stretchequalattributes{25}{290}{130}{0,\arabic{charstrmodcount},\arabic{chardexmodcount},-1,10}
+  \stretchequalattributes{25}{290}{130}{0,\arabic{charstrmodcount},\arabic{chardexmodcount},0,10}
   \stretchlabels{25}{284}{130}{TOTAL, \mbox{base attack} bonus,strength modifier,dexterity modifier, size modifier,default}
 
   \singletitlebox{135}{284}{25}{35}{speed}
   % \put(135,284){\framebox(25,35){\uppercase{Speed}}}
   \put(165,310){\framebox(40,\boxheight){}}
-  \put(165,311){\begin{tabular}[b]{F{17}E{2}F{16}E{2}}20 &ft. & 4& sq.\end{tabular}}
+  \put(165,311){\begin{tabular}[b]{F{17}E{2}F{16}E{2}}30 &ft. & 6& sq.\end{tabular}}
   \put(165,307){\parbox[b][3\unitlength][b]{40\unitlength}{\centering\lfont base speed}}
   \put(165,297){\framebox(40,\boxheight){}}
   \put(165,298){\begin{tabular}[b]{F{17}E{2}F{16}E{2}}0 &ft. & 0& sq.\end{tabular}}
@@ -144,11 +145,40 @@
 
   % reemplazar por la lista de spells
   % \singletitlebox{0}{256}{40}{11}{Spells p/D}
-  \put(0,251){\spelltable}
-  \put(0,100){\begin{tabular}{B{80}B{80}}
-        Feats & Description \\
-        Ears and Eyes of the city & Perception is always a class skill and +2 \\
-  \end{tabular}}
+  % \put(0,251){\spelltable}
+  \singletitlebox{0}{250}{70}{11}{Special Abilities}
+  \put(0,214){\begin{tabular}{B{205}}
+        \hline
+        Improved Initiate: +4 initiative. \\
+        Cantrips \\
+        Elven Inmmunites: Immune to slepp. (+2) Racial saving throw bonus,
+        against enchantment and elf?\\
+        Adaptability: Skill Focus, (+3) Perception.\\
+        Low-light vision. \\ 
+        Fey Thoughts: Perception and ride are class skills.
+        \end{tabular}}
+  \singletitlebox{0}{170}{70}{11}{Traits}
+    \put(0,152){\begin{tabular}{B{205}}
+        \hline
+        Cold Heart: (+2) saving throw against spells and effects with the
+        emotion descriptor.\\
+        Survavalist: (+1) Fortitude. \\
+        \end{tabular}}
+  \singletitlebox{0}{120}{70}{11}{Notes}
+    \put(0,56){\begin{tabular}{B{205}}
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \tabularnewline\hline
+        \end{tabular}}
   % \weapontable{0}{210}{null}{null}{null}{null}{null}{null}{null}
   % \weapontable{0}{158}{null}{null}{null}{null}{null}{null}{null}
   % \weapontable{0}{106}{null}{null}{null}{null}{null}{null}{null}
@@ -235,11 +265,3 @@
 \end{picture}
 
 \end{document}
-
-%%% Local Variables: 
-%%% mode: latex
-%%% TeX-master: t
-%%% End: 
-
-
-
